@@ -1,0 +1,23 @@
+import numpy as np
+import os
+#fileIn = open('letter-recognition.dat.txt', mode = 'r')
+fileName="letter-recognition.dat.txt"
+
+#for a in fileIn:
+	
+def getFile(fileName):
+		lines =open(fileName).read().split('\n')
+		lineStripped = []
+		for lineNum,line in enumerate(lines):
+			lineStripped.append(line[lineNum].strip(','))
+			print (line.strip(','))
+		print ('file is ' + fileName + 'opened')
+		return lines,len(lines[0])
+
+#sdef parseLines(lines):
+			
+lines = getFile(fileName)
+print (lines)
+
+
+		
